@@ -56,7 +56,7 @@
           <h1 class="jumbotron-heading">GeekyRakshit</h1>
           <p class="lead text-muted">Welcome to my world. Here coding becomes poetry, algorithms become story and technology comes to life. It is the world of a coder, a poet, a storyteller and most of all a dreamer.</p>
           <p>
-            <a href="#" class="btn btn-primary my-2">Subscribe</a>
+            <button class="btn btn-primary my-2" id="open-popup">Subscribe</button>
             <a href="resume.html" class="btn btn-secondary my-2">Hire Me</a>
           </p>
         </div>
@@ -102,5 +102,20 @@
     <script src="../../assets/js/vendor/popper.min.js"></script>
     <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/plugins/holder.min.js"></script>
+    <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
+    <script type="text/javascript">
+      function showMailPopUp() {
+        window.dojoRequire(["mojo/signup-forms/Loader"], function(L) {
+          L.start({
+            "baseUrl":"mc.us19.list-manage.com",
+            "uuid":"d7e61a1e808b272e3b0edc2ef",
+            "lid":"d191b34186",
+            "uniqueMethods":true
+          })
+        })
+        document.cookie = "MCEvilPopupClosed=; expires=Thu, 01 Jan 1970 00:00:00 UTC";
+      };
+      document.getElementById("open-popup").onclick = function() {showMailPopUp()};
+    </script>
   </body>
 </html>
