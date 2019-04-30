@@ -138,6 +138,20 @@ a:after {
 	padding-bottom: 50px;
 }
 
+.typed1 {
+	font-size: 28px;
+	color: #f4b942;
+}
+
+.typed2 {
+	font-size: 28px;
+	color: #41aff4;
+}
+
+.typed3 {
+	font-size: 28px;
+	color: #af41f4;
+}
 
 /* +++++ WRAP SECTIONS +++++ */
 
